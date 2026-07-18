@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز اللوتس الطبي | رعاميتكم صحتنا</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="مركز اللوتس الطبي في صنعاء - يقدم خدمات طبية متميزة في طب الأسنان، النساء والولادة، تنظيم الأسرة، الأنف والأذن والحنجرة، والطوارئ. كادر طبي متخصص ورعاية متكاملة.">
+    <meta name="keywords" content="مركز اللوتس الطبي, عيادة أسنان صنعاء, دكتورة شيماء الحداد, دكتورة لمياء الحداد, دكتور منصور الذبحاني, دكتورة فاتن العبسي, مركز طبي صنعاء, عيادات صنعاء">
+    <meta name="author" content="مركز اللوتس الطبي">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="مركز اللوتس الطبي | رعاميتكم صحتنا">
+    <meta property="og:description" content="مركز طبي متعدد التخصصات في صنعاء، يقدم أفضل رعاية صحية وعلاجية بأحدث الأجهزة والكفاءات الطبية.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts (Cairo & Tajawal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="assets/logo.png" alt="شعار مركز اللوتس الطبي" class="logo-img" id="logoImg">
+                <div class="logo-text">
+                    <span class="logo-title">مركز اللوتس الطبي</span>
+                    <span class="logo-subtitle">Lotus Medical Center</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#clinics" class="nav-link">العيادات</a></li>
+                    <li><a href="#services" class="nav-link">الخدمات</a></li>
+                    <li><a href="#faq" class="nav-link">الأسئلة</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-action">
+                <div class="header-socials">
+                    <a href="https://www.facebook.com/p/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%84%D9%88%D8%AA%D8%B3-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A-61572759297684/" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lotus_medical_center" target="_blank" rel="noopener noreferrer" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="https://wa.me/967780856000" target="_blank" class="btn btn-primary nav-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>احجز الآن</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <span class="drawer-title">القائمة الرئيسية</span>
+            <button class="drawer-close" id="drawerClose" aria-label="إغلاق القائمة">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="drawer-links">
+            <li><a href="#hero" class="drawer-link">الرئيسية</a></li>
+            <li><a href="#about" class="drawer-link">من نحن</a></li>
+            <li><a href="#clinics" class="drawer-link">العيادات والكادر</a></li>
+            <li><a href="#services" class="drawer-link">الخدمات والمرافق</a></li>
+            <li><a href="#faq" class="drawer-link">الأسئلة الشائعة</a></li>
+            <li><a href="#contact" class="drawer-link">اتصل بنا</a></li>
+        </ul>
+        <div class="drawer-footer">
+            <a href="https://wa.me/967780856000" target="_blank" class="btn btn-whatsapp w-100" style="margin-bottom: 15px;">
+                <i class="fab fa-whatsapp"></i>
+                <span>احجز عبر الواتساب</span>
+            </a>
+            <div class="drawer-socials">
+                <a href="https://www.facebook.com/p/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%84%D9%88%D8%AA%D8%B3-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A-61572759297684/" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/lotus_medical_center" target="_blank" rel="noopener noreferrer" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Premium Dot-Grid Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Right Column: Texts, Booking Widget and Actions -->
+                <div class="hero-content scroll-reveal">
+                    <span class="hero-badge"><i class="fa-solid fa-star"></i> رعاية طبية متكاملة في قلب صنعاء</span>
+                    <h1 class="hero-title">مركز اللوتس الطبي <br><span class="highlight">رعايتكم صحتنا</span></h1>
+                    <p class="hero-desc">شريككم الدائم نحو العافية والجمال. نقدم لكم رعاية طبية استثنائية وعيادات متخصصة مجهزة بأحدث التقنيات لخدمة جميع أفراد عائلتكم في موقع مميز وسهل الوصول.</p>
+                    
+                    <!-- Frosted Glass Booking Selector Widget -->
+                    <div class="hero-booking-widget">
+                        <div class="widget-field">
+                            <label for="widgetClinicSelect"><i class="fa-solid fa-stethoscope"></i> اختر العيادة</label>
+                            <select id="widgetClinicSelect">
+                                <option value="عيادة طب الأسنان">عيادة طب الأسنان (الأساسية)</option>
+                                <option value="عيادة النساء والولادة">عيادة النساء والولادة</option>
+                                <option value="عيادة تنظيم الأسرة">عيادة تنظيم الأسرة</option>
+                                <option value="عيادة الأنف والأذن والحنجرة">عيادة الأنف والأذن والحنجرة</option>
+                                <option value="قسم الطوارئ">قسم الطوارئ</option>
+                            </select>
+                        </div>
+                        <div class="widget-field">
+                            <label for="widgetDateInput"><i class="fa-solid fa-calendar-days"></i> تاريخ الزيارة</label>
+                            <input type="date" id="widgetDateInput">
+                        </div>
+                        <div class="widget-action">
+                            <button class="btn btn-primary" id="widgetBookBtn">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                <span>حجز موعد</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="https://wa.me/967780856000?text=مرحباً%20مركز%20اللوتس%20الطبي،%20أود%20الاستفسار%20عن%20العيادات%20وحجز%20موعد" target="_blank" class="btn btn-whatsapp btn-lg">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>تواصل سريع عبر واتساب</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Left Column: Overlapping Collage Layout -->
+                <div class="hero-visual-area scroll-reveal">
+                    <div class="collage-container">
+                        <!-- Image 1: Main Lobby (Top/Right) -->
+                        <img class="collage-img-1" src="assets/hero_bg.png" alt="مدخل مركز اللوتس الطبي">
+                        
+                        <!-- Image 2: Doctor Care (Bottom/Left) -->
+                        <img class="collage-img-2" src="assets/about_img.png" alt="الرعاية الطبية بالمركز">
+                        
+                        <!-- Floating Badge 1: 24 Hours Emergency -->
+                        <div class="floating-badge-1">
+                            <div class="status-dot-pulse danger"></div>
+                            <span>الطوارئ: 24 ساعة</span>
+                        </div>
+                        
+                        <!-- Floating Badge 2: Open Now status -->
+                        <div class="floating-badge-2">
+                            <div class="status-dot-pulse"></div>
+                            <span>مفتوح الآن</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Premium SVG Wave bottom decoration -->
+        <div class="hero-wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Floating Quick Contact Island -->
+    <section class="quick-contact-bar">
+        <div class="container">
+            <div class="contact-bar-grid">
+                <div class="contact-bar-item">
+                    <div class="bar-icon accent">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="bar-info">
+                        <h3>تواصل معنا</h3>
+                        <a href="tel:+967780856000" dir="ltr">+967 780 856 000</a>
+                    </div>
+                </div>
+                <div class="contact-bar-item">
+                    <div class="bar-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="bar-info">
+                        <h3>الموقع والعنوان</h3>
+                        <p>شارع الستين الشمالي، أمام الشركة اليمنية السعودية</p>
+                    </div>
+                </div>
+                <div class="contact-bar-item">
+                    <div class="bar-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="bar-info">
+                        <h3>ساعات العمل</h3>
+                        <p>العيادات: 8:00 ص - 8:00 م | الطوارئ: 24 ساعة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section id-target" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-area scroll-reveal">
+                    <img src="assets/about_img.png" alt="الرعاية الطبية في مركز اللوتس" class="about-img">
+                    <div class="experience-card">
+                        <span class="exp-number">10+</span>
+                        <span class="exp-text">أعوام من التميز الطبي</span>
+                    </div>
+                </div>
+                
+                <div class="about-content-area scroll-reveal">
+                    <span class="section-badge">تعرف علينا</span>
+                    <h2 class="section-title">مركز اللوتس الطبي .. ريادة طبية بلمسة إنسانية</h2>
+                    <p class="about-text-p">نسعى في مركز اللوتس الطبي إلى تقديم تجربة علاجية وصحية متميزة تليق بمراجعينا في مدينة صنعاء. نوفر الرعاية الطبية الفائقة بأسلوب يجمع بين الدقة في التشخيص والسرعة في توفير الخدمة، من أجل بيئة علاجية متكاملة تمنحكم وأسركم الطمأنينة والأمان.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                            <div class="feature-text">
+                                <h3>استشاريون متميزون</h3>
+                                <p>طاقم طبي ذو كفاءة وخبرة علمية مشهود لها محلياً لتقديم أفضل تشخيص وعلاج.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-microscope"></i></div>
+                            <div class="feature-text">
+                                <h3>تقنيات تشخيصية حديثة</h3>
+                                <p>نظام متطور يدعم دقة ونجاح الفحوصات الطبية والعلاجات المعاصرة.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+                            <div class="feature-text">
+                                <h3>رعاية متمحورة حول راحة المريض</h3>
+                                <p>نعطي الأولوية لراحة المراجع وخصوصيته لضمان تجربة زيارة مريحة وخالية من التوتر.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-eye"></i></div>
+                    <div class="stat-number" id="visitCounter">٠</div>
+                    <div class="stat-text">زيارة للموقع</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <div class="stat-number">١٠+</div>
+                    <div class="stat-text">أطباء واستشاريين</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-house-medical"></i></div>
+                    <div class="stat-number">٥+</div>
+                    <div class="stat-text">عيادات تخصصية</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="stat-number">٢٤/٧</div>
+                    <div class="stat-text">جاهزية قسم الطوارئ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinics & Staff Section -->
+    <section class="clinics-section id-target" id="clinics">
+        <div class="container">
+            <div class="section-header scroll-reveal text-center">
+                <span class="section-badge">عياداتنا وكادرنا</span>
+                <h2 class="section-title center-title">العيادات الطبية والنخبة الطبية</h2>
+                <p class="section-subtitle center-subtitle">نوفر رعاية صحية في مختلف التخصصات الطبية الهامة تحت إشراف طاقم طبي متخصص.</p>
+            </div>
+            
+            <div class="clinics-grid">
+                <!-- Dental Clinic -->
+                <div class="clinic-card scroll-reveal">
+                    <div class="clinic-card-header">
+                        <div class="clinic-icon"><i class="fa-solid fa-tooth"></i></div>
+                        <span class="badge primary-badge">العيادة الأساسية</span>
+                    </div>
+                    <div class="clinic-card-body">
+                        <h3 class="clinic-name">عيادة طب الأسنان</h3>
+                        <p class="clinic-desc">عيادة مجهزة بأحدث الكراسي الطبية والأجهزة التشخيصية لتقديم خدمات تجميل وزراعة الأسنان، تقويم الأسنان، علاج الجذور العصبي، وتركيبات البورسلين والزركون بجمالية وجودة عالية.</p>
+                        
+                        <div class="staff-info">
+                            <h4 class="staff-title"><i class="fa-solid fa-stethoscope"></i> الطاقم الطبي بالعيادة:</h4>
+                            <ul class="doctor-list">
+                                <li>
+                                    <div class="doc-avatar-initials">ش</div>
+                                    <div class="doc-detail-txt">
+                                        <span class="doc-name">د. شيماء الحداد</span>
+                                        <span class="doc-title">أخصائية طب وجراحة الفم والأسنان</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="doc-avatar-initials">ل</div>
+                                    <div class="doc-detail-txt">
+                                        <span class="doc-name">د. لمياء الحداد</span>
+                                        <span class="doc-title">أخصائية طب وجراحة الفم والأسنان</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clinic-card-footer">
+                        <button class="btn btn-accent w-100 book-btn" data-clinic="عيادة طب الأسنان" data-doctors="د. شيماء الحداد، د. لمياء الحداد">
+                            <i class="fab fa-whatsapp"></i> احجز موعداً بالعيادة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Gynecology Clinic -->
+                <div class="clinic-card scroll-reveal">
+                    <div class="clinic-card-header">
+                        <div class="clinic-icon"><i class="fa-solid fa-person-breastfeeding"></i></div>
+                    </div>
+                    <div class="clinic-card-body">
+                        <h3 class="clinic-name">عيادة النساء والولادة</h3>
+                        <p class="clinic-desc">نقدم خدمات متكاملة لمتابعة مراحل الحمل والولادة الآمنة، تشخيص وعلاج العقم والاضطرابات الهرمونية، وفحص الأجنة بالموجات الصوتية الملونة بدقة متكاملة للحفاظ على صحة الأم والطفل.</p>
+                        
+                        <div class="staff-info">
+                            <h4 class="staff-title"><i class="fa-solid fa-stethoscope"></i> الطاقم الطبي بالعيادة:</h4>
+                            <ul class="doctor-list">
+                                <li>
+                                    <div class="doc-avatar-initials">ف</div>
+                                    <div class="doc-detail-txt">
+                                        <span class="doc-name">د. فاتن العبسي</span>
+                                        <span class="doc-title">أخصائية أمراض النساء والولادة والعقم</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clinic-card-footer">
+                        <button class="btn btn-accent w-100 book-btn" data-clinic="عيادة النساء والولادة" data-doctors="د. فاتن العبسي">
+                            <i class="fab fa-whatsapp"></i> احجز موعداً بالعيادة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Family Planning Clinic -->
+                <div class="clinic-card scroll-reveal">
+                    <div class="clinic-card-header">
+                        <div class="clinic-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                    </div>
+                    <div class="clinic-card-body">
+                        <h3 class="clinic-name">عيادة تنظيم الأسرة</h3>
+                        <p class="clinic-desc">تعنى بتقديم استشارات الصحة الإنجابية المتنوعة، توفير وتركيب جميع وسائل تنظيم الأسرة الآمنة، وتقديم إرشادات متخصصة للمباعدة بين الولادات بما يضمن صحة الأم والمولود.</p>
+                        
+                        <div class="staff-info">
+                            <h4 class="staff-title"><i class="fa-solid fa-stethoscope"></i> الطاقم الطبي بالعيادة:</h4>
+                            <ul class="doctor-list">
+                                <li>
+                                    <div class="doc-avatar-initials">إ</div>
+                                    <div class="doc-detail-txt">
+                                        <span class="doc-name">د. إيحا العسلي</span>
+                                        <span class="doc-title">أخصائية الصحة الإنجابية وتنظيم الأسرة</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clinic-card-footer">
+                        <button class="btn btn-accent w-100 book-btn" data-clinic="عيادة تنظيم الأسرة" data-doctors="د. إيحا العسلي">
+                            <i class="fab fa-whatsapp"></i> احجز موعداً بالعيادة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ENT Clinic -->
+                <div class="clinic-card scroll-reveal">
+                    <div class="clinic-card-header">
+                        <div class="clinic-icon"><i class="fa-solid fa-ear-listen"></i></div>
+                    </div>
+                    <div class="clinic-card-body">
+                        <h3 class="clinic-name">عيادة الأذن والأنف والحنجرة</h3>
+                        <p class="clinic-desc">تشخيص دقيق وعلاج لاضطرابات السمع والاتزان، التهابات الجيوب الأنفية المزمنة، مشاكل اللوزتين وصعوبات البلع، باستخدام أحدث مناظير الأنف والأذن التشخيصية المتطورة.</p>
+                        
+                        <div class="staff-info">
+                            <h4 class="staff-title"><i class="fa-solid fa-stethoscope"></i> الطاقم الطبي بالعيادة:</h4>
+                            <ul class="doctor-list">
+                                <li>
+                                    <div class="doc-avatar-initials">م</div>
+                                    <div class="doc-detail-txt">
+                                        <span class="doc-name">الاستشاري د. منصور الذبحاني</span>
+                                        <span class="doc-title">استشاري أمراض وجراحة الأنف والأذن والحنجرة</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clinic-card-footer">
+                        <button class="btn btn-accent w-100 book-btn" data-clinic="عيادة الأنف والأذن والحنجرة" data-doctors="الاستشاري د. منصور الذبحاني">
+                            <i class="fab fa-whatsapp"></i> احجز موعداً بالعيادة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Emergency Department -->
+                <div class="clinic-card emergency-card scroll-reveal">
+                    <div class="clinic-card-header">
+                        <div class="clinic-icon"><i class="fa-solid fa-house-medical-circle-exclamation"></i></div>
+                        <span class="badge danger-badge">24 ساعة</span>
+                    </div>
+                    <div class="clinic-card-body">
+                        <h3 class="clinic-name">قسم الطوارئ</h3>
+                        <p class="clinic-desc">نستقبل الحالات الإسعافية والطارئة والحروق والجروح على مدار الساعة مع جاهزية تامة لطاقم تمريضي مدرب وأجهزة تنفس ومراقبة علامات حيوية فائقة السرعة.</p>
+                        
+                        <div class="staff-info">
+                            <h4 class="staff-title"><i class="fa-solid fa-stethoscope"></i> طبيب الطوارئ المناوب:</h4>
+                            <ul class="doctor-list">
+                                <li>
+                                    <div class="doc-avatar-initials">ع</div>
+                                    <div class="doc-detail-txt">
+                                        <span class="doc-name">د. عائشة الفقيه</span>
+                                        <span class="doc-title">أخصائية طب الطوارئ والحالات الحرجة</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clinic-card-footer">
+                        <button class="btn btn-whatsapp w-100 book-btn" data-clinic="قسم الطوارئ" data-doctors="د. عائشة الفقيه">
+                            <i class="fa-solid fa-phone"></i> تواصل مع الطوارئ فوراُ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Facilities Section -->
+    <section class="services-section id-target" id="services">
+        <div class="container">
+            <div class="section-header scroll-reveal text-center">
+                <span class="section-badge">مرافقنا وخدماتنا</span>
+                <h2 class="section-title center-title">الخدمات الطبية والمرافق المساندة</h2>
+                <p class="section-subtitle center-subtitle">تكامل الرعاية وتوفير كافة الفحوصات والاحتياجات الدوائية للمريض في مكان واحد وبأعلى مقاييس الجودة.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Medical Lab -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-vial-virus"></i>
+                    </div>
+                    <h3 class="service-title">قسم الفحوصات الطبية</h3>
+                    <p class="service-desc">مختبر مجهز بالكامل بأحدث الأجهزة الآلية والتحاليل المخبرية الدقيقة والسريعة لإجراء كافة الفحوصات الهرمونية، الكيميائية، ودلالات الأورام لمساعدة الأطباء في دقة التشخيص.</p>
+                </div>
+
+                <!-- Dressing & Wound Clinic -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="service-title">عيادة المجارحة</h3>
+                    <p class="service-desc">تضميد الجروح والغيار الطبي المعقم، خياطة الجروح والإصابات الطفيفة، وتطهير الحروق وعلاجها وفق أعلى معايير مكافحة العدوى والتعقيم التام.</p>
+                </div>
+
+                <!-- Lotus Pharmacy -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    </div>
+                    <h3 class="service-title">صيدلية اللوتس</h3>
+                    <p class="service-desc">صيدلية المركز الداخلية المتميزة بتوفير كامل الأدوية الموصوفة والبدائل والمستلزمات الطبية المتنوعة وتوفير رعاية صيدلانية متكاملة وإرشادات استخدام الدواء.</p>
+                </div>
+
+                <!-- Diagnostic Imaging -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-x-ray"></i>
+                    </div>
+                    <h3 class="service-title">الأشعة والتصوير الطبي</h3>
+                    <p class="service-desc">أشعة تلفزيونية وسونار حديث لدعم التشخيص ومتابعة الحالات المرضية وتوفير نتائج تصويرية واضحة وموثوقة.</p>
+                </div>
+
+                <!-- Medical Records -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-file-medical"></i>
+                    </div>
+                    <h3 class="service-title">الأرشفة والملفات الرقمية</h3>
+                    <p class="service-desc">نظام تقني حديث لأرشفة بيانات وحفظ ملفات المرضى وتاريخهم المرضي لضمان سرية المعلومات وتسهيل متابعة وتطور الحالة الصحية بكل سلاسة.</p>
+                </div>
+
+                <!-- Patient Support -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="service-title">خدمة الاستشارات الطبية</h3>
+                    <p class="service-desc">توجيه وإرشاد المرضى وتقديم معلومات تفصيلية لتوجيه المراجع نحو التخصص الطبي المناسب لشرح وتوضيح تفاصيل رحلته العلاجية بالمركز.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section id-target" id="faq">
+        <div class="container">
+            <div class="section-header scroll-reveal text-center">
+                <span class="section-badge">تساؤلات شائعة</span>
+                <h2 class="section-title center-title">الأسئلة الشائعة والإجابات</h2>
+                <p class="section-subtitle center-subtitle">تجدون هنا إجابات سريعة للأسئلة المتكررة حول الحجز والخدمات التي يوفرها المركز.</p>
+            </div>
+            
+            <div class="faq-container scroll-reveal">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يمكنني حجز موعد في المركز؟</span>
+                        <i class="fa-solid fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            يمكنك حجز موعدك بكل سهولة عن طريق الضغط على زر "احجز موعداً" في العيادة المطلوبة بالصفحة، لفتح نموذج الحجز وإرسال تفاصيل الموعد مباشرة عبر الواتساب، أو من خلال الضغط على زر الواتساب العائم في أسفل الشاشة للتحدث المباشر مع طاقم الحجوزات.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>ما هي أوقات العمل الرسمية بالعيادات وقسم الطوارئ؟</span>
+                        <i class="fa-solid fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            تعمل العيادات التخصصية على فترتين: الفترة الصباحية من 8:00 صباحاً حتى 12:00 ظهراً، والفترة المسائية من 4:00 عصراً حتى 8:00 مساءً. أما بالنسبة لـ **قسم الطوارئ الطبية وعيادة المجارحة وصيدلية اللوتس**، فهي تعمل على مدار 24 ساعة طوال أيام الأسبوع لاستقبال الحالات العاجلة.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>هل تتوفر الصيدلية والمختبر داخل مبنى المركز؟</span>
+                        <i class="fa-solid fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            نعم، حرصنا في مركز اللوتس على راحة مراجعينا وتوفير خدمات متكاملة؛ حيث توجد صيدلية اللوتس لتأمين العلاجات والمستلزمات الطبية مباشرة فور خروجكم من العيادة، إلى جانب قسم الفحوصات الطبية (المختبر) لإجراء أدق الفحوصات الطبية والتحاليل المخبرية.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>أين يقع المركز بالضبط في صنعاء؟ وكيف يمكنني الوصول؟</span>
+                        <i class="fa-solid fa-chevron-down faq-toggle-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            يقع مركز اللوتس الطبي في موقع حيوي وسهل الوصول بصنعاء: **شارع الستين الشمالي، أمام الشركة اليمنية السعودية، بجوار سوق علي محسن للخضروات مباشرة**. ويمكنك الاستعانة بـ خريطة جوجل التفاعلية المدمجة بالصفحة للوصول وتحديد الاتجاهات بدقة.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">حجز موعد جديد</h3>
+                <button class="modal-close" id="modalClose" aria-label="إغلاق النافذة">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" class="booking-form">
+                    <input type="hidden" id="formClinic" name="clinic">
+                    <div class="form-group">
+                        <label for="formDoctor">الطبيب المختص بالعيادة</label>
+                        <select id="formDoctor" class="form-control" required>
+                            <!-- Will be populated dynamically -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formPatientName">اسم المريض الكامل</label>
+                        <input type="text" id="formPatientName" class="form-control" placeholder="أدخل اسمك الكريم" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formPhone">رقم الجوال للتواصل</label>
+                        <input type="tel" id="formPhone" class="form-control" placeholder="7XXXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formDate">التاريخ المفضل للزيارة</label>
+                        <input type="date" id="formDate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formTime">الفترة المفضلة</label>
+                        <select id="formTime" class="form-control">
+                            <option value="صباحاً (8:00 ص - 12:00 م)">صباحاً (8:00 ص - 12:00 م)</option>
+                            <option value="مساءً (4:00 م - 8:00 م)">مساءً (4:00 م - 8:00 م)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="formNotes">ملاحظات أو تفاصيل إضافية (اختياري)</label>
+                        <textarea id="formNotes" class="form-control" rows="3" placeholder="اكتب أي شكوى طبية بسيطة أو ملاحظة تود مشاركتها..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp w-100 btn-submit">
+                        <i class="fab fa-whatsapp"></i> تأكيد الحجز وإرسال عبر واتساب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section id-target" id="contact">
+        <div class="container">
+            <div class="section-header scroll-reveal text-center">
+                <span class="section-badge">تواصل معنا</span>
+                <h2 class="section-title center-title">يسعدنا استقبالكم والإجابة على استفساراتكم</h2>
+            </div>
+            
+            <!-- Sleek Contact Cards Grid (3x2 Desktop Layout) -->
+            <div class="contact-cards-grid scroll-reveal">
+                <!-- Card 1: WhatsApp -->
+                <a href="https://wa.me/967780856000" target="_blank" rel="noopener noreferrer" class="contact-card card-whatsapp">
+                    <div class="contact-icon-wrapper">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>واتساب مباشر</h3>
+                    <p dir="ltr">+967 780 856 000</p>
+                </a>
+
+                <!-- Card 2: Instagram -->
+                <a href="https://www.instagram.com/lotus_medical_center" target="_blank" rel="noopener noreferrer" class="contact-card card-instagram">
+                    <div class="contact-icon-wrapper">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>انستغرام</h3>
+                    <p>@lotus_medical_center</p>
+                </a>
+
+                <!-- Card 3: Facebook -->
+                <a href="https://www.facebook.com/p/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%84%D9%88%D8%AA%D8%B3-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A-61572759297684/" target="_blank" rel="noopener noreferrer" class="contact-card card-facebook">
+                    <div class="contact-icon-wrapper">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>فيسبوك</h3>
+                    <p>مركز اللوتس الطبي</p>
+                </a>
+
+                <!-- Card 4: Phone -->
+                <a href="tel:+967780856000" class="contact-card card-phone">
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3>الهاتف والجوال</h3>
+                    <p dir="ltr">+967 780 856 000</p>
+                </a>
+
+                <!-- Card 5: Email -->
+                <a href="mailto:info@lotusmed-ye.com" class="contact-card card-email">
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>info@lotusmed-ye.com</p>
+                </a>
+
+                <!-- Card 6: Location -->
+                <!-- Card 6: Location -->
+                <a href="https://maps.google.com/?q=%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AA%D9%8A%D9%86%20%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84%D9%8B%D8%8C%20%D8%B5%D9%86%D8%B9%D8%A7%D8%A1" target="_blank" rel="noopener noreferrer" class="contact-card card-location">
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3>العنوان والموقع</h3>
+                    <p>صنعاء، شارع الستين الشمالي</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="شعار مركز اللوتس الطبي" class="footer-logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title font-white">مركز اللوتس الطبي</span>
+                        <span class="logo-subtitle text-gray">Lotus Medical Center</span>
+                    </div>
+                </div>
+                <p class="brand-desc">عيادات تخصصية متكاملة تقدم أرقى الخدمات الطبية في العاصمة صنعاء برعاية متميزة وجودة عالية.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/p/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%84%D9%88%D8%AA%D8%B3-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A-61572759297684/" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/967780856000" target="_blank" rel="noopener noreferrer" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/lotus_medical_center" target="_blank" rel="noopener noreferrer" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col links-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#hero"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-angle-left"></i> من نحن</a></li>
+                    <li><a href="#clinics"><i class="fa-solid fa-angle-left"></i> عياداتنا الطبية</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-angle-left"></i> الخدمات والمرافق</a></li>
+                    <li><a href="#faq"><i class="fa-solid fa-angle-left"></i> الأسئلة الشائعة</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-angle-left"></i> اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col clinics-list-col">
+                <h3>العيادات الطبية</h3>
+                <ul>
+                    <li><a href="#clinics"><i class="fa-solid fa-angle-left"></i> عيادة طب الأسنان</a></li>
+                    <li><a href="#clinics"><i class="fa-solid fa-angle-left"></i> عيادة النساء والولادة</a></li>
+                    <li><a href="#clinics"><i class="fa-solid fa-angle-left"></i> عيادة تنظيم الأسرة</a></li>
+                    <li><a href="#clinics"><i class="fa-solid fa-angle-left"></i> عيادة الأذن والأنف والحنجرة</a></li>
+                    <li><a href="#clinics"><i class="fa-solid fa-angle-left"></i> قسم الطوارئ الإسعافية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h3>معلومات الاتصال</h3>
+                <ul class="contact-info-list">
+                    <li>
+                        <i class="fa-solid fa-map-location"></i>
+                        <span>صنعاء، شارع الستين الشمالي، أمام الشركة اليمنية السعودية</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span dir="ltr">+967 780 856 000</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@lotusmed-ye.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="developer-text">keycode للخدمات الالكترونية</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/967780856000?text=مرحباً%20مركز%20اللوتس%20الطبي،%20أود%20حجز%20موعد" class="floating-whatsapp" target="_blank" aria-label="تواصل معنا عبر الواتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip-text">راسلنا لحجز موعد</span>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
