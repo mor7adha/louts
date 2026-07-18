@@ -294,16 +294,20 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', 'light');
 
     // ==========================================
-    // 9. DYNAMIC VISITOR COUNTER
+    // 9. DYNAMIC VISITOR COUNTER WITH BASELINE
     // ==========================================
     const visitCounterEl = document.getElementById('visitCounter');
     
     if (visitCounterEl) {
-        // Fallback Local Storage Counter starting at 0 (key updated to lotus_visits_v3 to clear old browser cache)
-        let localVisits = parseInt(localStorage.getItem('lotus_visits_v3') || '0');
+        const visitsBaseline = 1864; // Start baseline at 1864 so first visit equals 1865
+        
+        // Fallback Local Storage Counter (key updated to lotus_visits_v4 to clear old browser cache)
+        let localVisits = parseInt(localStorage.getItem('lotus_visits_v4') || '0');
         localVisits += 1;
-        localStorage.setItem('lotus_visits_v3', localVisits.toString());
-        visitCounterEl.textContent = localVisits.toLocaleString('ar-YE'); // Render initially with local count
+        localStorage.setItem('lotus_visits_v4', localVisits.toString());
+        
+        const initialDisplay = visitsBaseline + localVisits;
+        visitCounterEl.textContent = initialDisplay.toLocaleString('ar-YE'); // Render initially with baseline + local count
 
         // Try to fetch global real count from CounterAPI (will work if online)
         // Project ID: lotus-medical-center-visits-production-v2 (fresh starting namespace)
@@ -312,7 +316,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 if (data && data.value) {
                     const totalVisits = data.value;
-                    visitCounterEl.textContent = totalVisits.toLocaleString('ar-YE');
+                    const finalDisplay = visitsBaseline + totalVisits;
+                    visitCounterEl.textContent = finalDisplay.toLocaleString('ar-YE');
                 }
             })
             .catch(err => {
