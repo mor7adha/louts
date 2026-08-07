@@ -24,3 +24,12 @@ main,footer{width:calc(100% - 20px)}
 @media(max-width:1100px){.clinic-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:760px){.clinic-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.clinic-grid{grid-template-columns:1fr}.clinic,.clinic.featured,.clinic.emergency{min-height:240px}}
+
+/* Mobile glass navigation and footer credits */
+@media(max-width:600px){
+  .header{top:12px;height:68px;width:calc(100% - 28px);background:linear-gradient(135deg,rgba(9,29,61,.72),rgba(20,57,92,.48));border:1px solid rgba(184,225,255,.24);border-radius:22px;box-shadow:0 14px 40px rgba(0,9,31,.34),inset 0 1px 0 rgba(255,255,255,.18);backdrop-filter:blur(18px) saturate(145%);-webkit-backdrop-filter:blur(18px) saturate(145%)}
+  .header:after{content:"";position:absolute;inset:1px;border-radius:20px;background:linear-gradient(110deg,rgba(255,255,255,.13),transparent 38%);pointer-events:none}
+  .nav{padding:0 12px;position:relative;z-index:1}.brand img{width:46px;height:46px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.18))}.menu{width:46px;height:46px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);color:#fff;box-shadow:none}.menu:hover{background:rgba(255,255,255,.2)}
+  .nav nav{top:78px;right:0;left:0;background:rgba(7,25,53,.94);border:1px solid rgba(180,220,255,.2);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);color:#fff}.nav nav a{color:#fff}
+  .copyright{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;line-height:1.7;padding-inline:12px}.copyright span{display:block;width:100%}.copyright a{display:inline-block;max-width:280px}.footer-grid{gap:34px}
+}
